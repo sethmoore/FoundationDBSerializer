@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "foundationDbTest", "foundationDbTest\foundationDbTest.csproj", "{5041BF00-6420-4641-A8AC-99F5C09F4CAD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Serializer", "KeyValueSerializer\Serializer.csproj", "{587A7A9A-AF26-4794-8C8C-46A8A15B01CD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5041BF00-6420-4641-A8AC-99F5C09F4CAD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5041BF00-6420-4641-A8AC-99F5C09F4CAD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5041BF00-6420-4641-A8AC-99F5C09F4CAD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5041BF00-6420-4641-A8AC-99F5C09F4CAD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{587A7A9A-AF26-4794-8C8C-46A8A15B01CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{587A7A9A-AF26-4794-8C8C-46A8A15B01CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{587A7A9A-AF26-4794-8C8C-46A8A15B01CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{587A7A9A-AF26-4794-8C8C-46A8A15B01CD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
