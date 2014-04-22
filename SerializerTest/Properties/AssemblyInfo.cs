@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("foundationDbTest")]
+[assembly: AssemblyTitle("SerializerTest")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Hewlett-Packard")]
-[assembly: AssemblyProduct("foundationDbTest")]
+[assembly: AssemblyProduct("SerializerTest")]
 [assembly: AssemblyCopyright("Copyright © Hewlett-Packard 2014")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("8c51aed0-cd9f-41a7-a0a6-bc2b3cb8f2f1")]
+[assembly: Guid("086abe2f-b30a-4716-9729-0d20da1462b4")]
 
 // Version information for an assembly consists of the following four values:
 //

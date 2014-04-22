@@ -104,7 +104,7 @@ namespace FoundationDbSerializer
                     // Loop over each pair and throw it into the transaction
                     foreach (var pair in keyValuePairs)
                     {
-                        trans.Set(location.Pack(pair.Key), GetSlice(pair.Value));
+                        trans.Set(location.Pack(pair.Key), Slice.FromString(pair.Value.ToString()));
                     }
                     
                     // Commit the changes to the db
@@ -138,6 +138,29 @@ namespace FoundationDbSerializer
             }
 
             return ConvertToObject<T>(keyValuePairs).First();
+        }
+
+        /// <summary>
+        /// Retrieves an object with the given Key from the foundationDB key/value store.
+        /// Note that this has no support yet for handling null fields/properties.
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="key"></param>
+        /// <param name="result"></param>
+        public async static void Delete<T>(string key)
+        {
+            List<KeyValuePair<string, string>> keyValuePairs = new List<KeyValuePair<string, string>>();
+
+            using (var db = await Fdb.OpenAsync())
+            {
+                // We'll use a subspace with the same name as the class including the namespace
+                var location = db.Partition(typeof(T).FullName);
+                
+                using (var trans = db.BeginTransaction(System.Threading.CancellationToken.None))
+                {
+                    //Delete the value?
+                }
+            }
         }
 
         private static Slice GetSlice(object value)
